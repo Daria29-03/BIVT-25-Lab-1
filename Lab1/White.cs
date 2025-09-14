@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-            answer = d < 0;
+            answer = d > 0;
             Console.WriteLine(d);
             // end
 
@@ -18,7 +18,8 @@
             bool answer = false;
 
             // code here
-
+            answer = n % 2 == 0;
+            Console.WriteLine(n);
             // end
 
             return answer;
@@ -28,7 +29,15 @@
             int answer = 0;
 
             // code here
-
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
+            
             // end
 
             return answer;
@@ -38,7 +47,9 @@
             double answer = 0;
 
             // code here
-
+            double absD = Math.Abs(d);
+            double absF = Math.Abs(f);
+            answer = absD < absF ? d : f;
             // end
 
             return answer;
@@ -48,7 +59,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) >1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = Math.Abs(x);
+            }
             // end
 
             return answer;
@@ -58,7 +76,11 @@
             bool answer = false;
 
             // code here
-
+            double k = Math.Abs(x * x + y * y - r * r);
+            if (k <= Math.Pow(10,-6) || k <= r * r * 1e-4)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -69,7 +91,15 @@
             bool answer = false;
 
             // code here
-
+            int s = n ^ 2;
+            
+            if (s-n>2*n)
+            {
+                if (n%2==0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -79,7 +109,13 @@
             bool answer = false;
 
             // code here
-
+            bool island = L <= 3 * 10;
+            bool landmarks = (T = M) >= 5;
+            bool mountains = M % 2 == 0;
+            if (island && landmarks && mountains)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
