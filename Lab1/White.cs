@@ -47,9 +47,16 @@
             double answer = 0;
 
             // code here
-            double absD = Math.Abs(d);
-            double absF = Math.Abs(f);
-            answer = absD < absF ? d : f;
+            double D = Math.Abs(d);
+            double F = Math.Abs(f);
+            if (D < F)
+            {
+                answer = d;
+            }
+            else
+            {
+                answer = f;
+            }
             // end
 
             return answer;
@@ -59,7 +66,7 @@
             double answer = 0;
 
             // code here
-            if (Math.Abs(x) >1)
+            if (Math.Abs(x) > 1)
             {
                 answer = 1;
             }
@@ -109,9 +116,9 @@
             bool answer = false;
 
             // code here
-            bool island = L <= 3 * 10;
-            bool landmarks = (T = M) >= 5;
-            bool mountains = M % 2 == 0;
+            bool island = L <= 30;
+            bool landmarks = (T + M) >= 5;
+            bool mountains = (M % 2) == 0;
             if (island && landmarks && mountains)
             {
                 answer = true;
