@@ -106,6 +106,14 @@
                 {
                     answer = true;
                 }
+                else
+                {
+                    return answer;
+                }
+            }
+            else
+            {
+                answer = true;  
             }
             // end
 
