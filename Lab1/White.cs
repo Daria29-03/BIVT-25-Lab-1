@@ -68,7 +68,7 @@
             // code here
             if (Math.Abs(x) > 1)
             {
-                answer = 1;
+                answer = x;
             }
             else
             {
