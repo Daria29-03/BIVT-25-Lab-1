@@ -124,10 +124,7 @@
             bool answer = false;
 
             // code here
-            bool island = L <= 30;
-            bool landmarks = (T + M) >= 5;
-            bool mountains = (M % 2) == 0;
-            if (island && landmarks && mountains)
+            if (L <= 30 && (T + M) >= 5 && M%2==0)
             {
                 answer = true;
             }
