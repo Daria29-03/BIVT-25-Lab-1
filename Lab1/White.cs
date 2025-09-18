@@ -87,7 +87,7 @@
             bool answer = false;
 
             // code here
-            int s = n^2;
+            int s = n*n;
             if (s-n > 2*n)
             {
                 if (n%2==0)
