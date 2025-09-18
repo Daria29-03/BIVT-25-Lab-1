@@ -55,14 +55,17 @@
         }
         public double Task5(double x)
         {
-            double answer = 1;
+            double answer = 0;
 
             // code here
-            if (x <= 1)
+            if (Math.Abs(x) > 1)
             {
-                answer = x;
+                answer = 1;
             }
-            
+            else
+            {
+                answer = Math.Abs(x);
+            }
            
             // end
 
@@ -88,9 +91,14 @@
             bool answer = false;
 
             // code here
-            int s = n ^ 2;
-            answer = (((s - n) > (2 * n)) && (n % 2 == 0));
-            
+            int s = n^2;
+            if (s-n > 2*n)
+            {
+                if (n%2==0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
