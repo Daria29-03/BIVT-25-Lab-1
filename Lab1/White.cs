@@ -55,16 +55,12 @@
         }
         public double Task5(double x)
         {
-            double answer = 0;
+            double answer = 1;
 
             // code here
-            if (Math.Abs(x) > 1)
+            if (Math.Abs(x) <= 1)
             {
-                answer = 1;
-            }
-            else
-            {
-                answer = Math.Abs(x);
+                answer = x;
             }
            
             // end
