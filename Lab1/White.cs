@@ -44,36 +44,26 @@
         }
         public double Task4(double d, double f)
         {
-            double answer = 0;
+            double answer = d;
 
             // code here
-            double D = Math.Abs(d);
-            double F = Math.Abs(f);
-            if (D < F)
-            {
-                answer = d;
-            }
-            else
-            {
+            if (Math.Abs(d) > Math.Abs(f))
                 answer = f;
-            }
             // end
 
             return answer;
         }
         public double Task5(double x)
         {
-            double answer = 0;
+            double answer = 1;
 
             // code here
-            if (Math.Abs(x) > 1)
+            if (x <= 1)
             {
                 answer = x;
             }
-            else
-            {
-                answer = Math.Abs(x);
-            }
+            
+           
             // end
 
             return answer;
@@ -99,22 +89,8 @@
 
             // code here
             int s = n ^ 2;
+            answer = (((s - n) > (2 * n)) && (n % 2 == 0));
             
-            if (s-n>2*n)
-            {
-                if (n%2==0)
-                {
-                    answer = true;
-                }
-                else
-                {
-                    return answer;
-                }
-            }
-            else
-            {
-                answer = true;  
-            }
             // end
 
             return answer;
